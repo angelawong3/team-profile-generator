@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/angelawong3/team-profile-generator#readme",
   "dependencies": {
+    "inquirer": "^8.2.4",
     "jest": "^28.1.1"
   }
 }
