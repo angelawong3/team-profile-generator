@@ -1,7 +1,7 @@
-const Manager = require("../lib/Manager");
+const { Manager } = require("../lib/Manager");
 
 test("Add a new manager", () => {
-  const manager = new Manager("Mary", 456, "mary456@yahoo.com", 001);
+  const manager = new Manager("Mary", 456, "mary456@yahoo.com", 789);
 
   expect(manager.name).toBe("Mary");
   expect(manager.id).toEqual(expect.any(Number));
@@ -10,7 +10,7 @@ test("Add a new manager", () => {
 });
 
 test("Check all methods for Manager class", () => {
-  const manager = new Manager("Mary", 456, "mary456@yahoo.com", 001);
+  const manager = new Manager("Mary", 456, "mary456@yahoo.com", 789);
 
   expect(manager.getName()).toBe(manager.name);
   expect(manager.getId()).toBe(manager.id);
