@@ -10,8 +10,8 @@ const { Intern, internInfoArray } = require("./lib/Intern");
 const employeesArray = [];
 
 // import writeFile and the temp HTML
-const { writeFile } = require("./src/writeFile");
-const { templateHTML } = require("./src/html");
+const writeFile = require("./src/writeFile");
+const templateHTML = require("./src/html");
 
 // prompt questions for manager
 const managerQuestions = () => {
@@ -54,3 +54,40 @@ const internQuestions = () => {
     return employeePrompt();
   });
 };
+
+// prompt to ask adding an employee or quit the app
+const employeePrompt = () => {
+  inquirer
+    .prompt([
+      {
+        type: "list",
+        name: "role",
+        message: "What would you like to add next?",
+        choices: [
+          { name: "Add an Engineer", value: "addEngineer" },
+          { name: "Add an Intern", value: "addIntern" },
+          { name: "Finish!", value: "quit" },
+        ],
+      },
+    ])
+    .then((answer) => {
+      if (answer.role === "addEngineer") {
+        engineerQuestions();
+      }
+      if (answer.role === "addIntern") {
+        internQuestions();
+      }
+      if (answer.role === "quit") {
+        let html = templateHTML(employeesArray);
+
+        writeFile(html);
+      }
+    });
+};
+
+// init by prompting manager questions
+const init = () => {
+  managerQuestions();
+};
+
+init();
