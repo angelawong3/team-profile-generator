@@ -40,3 +40,17 @@ const engineerQuestions = () => {
     return employeePrompt();
   });
 };
+
+// prompt questions for intern
+const internQuestions = () => {
+  inquirer.prompt(internInfoArray).then((answers) => {
+    answers = new Intern(
+      answers.name,
+      answers.id,
+      answers.email,
+      answers.school
+    );
+    employeesArray.push(answers);
+    return employeePrompt();
+  });
+};
