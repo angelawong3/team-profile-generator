@@ -9,10 +9,11 @@
 - [Usage](#usage)
 - [Screenshot and the Walkthrough Video](#screenshot-and-the-walkthrough-video)
 - [Teachologies Used](#technologies-used)
+- [Tests](#tests)
 - [License](#license)
 - [Contact Me](#contact-me)
 
-## Description
+### Description
 
 A team profile generator which enable users to quickly create a webpage that displays a team's basic info.
 
@@ -21,7 +22,8 @@ A team profile generator which enable users to quickly create a webpage that dis
 ```
 git clone git@github.com:angelawong3/team-profile-generator.git
 cd team-profile-generator
-npm install
+npm install inquirer
+npm install jest
 ```
 
 ### Usage
@@ -42,6 +44,12 @@ Download the walkthrough video [here]()
 
 1. JavaScript
 2. Node.js
+
+### Tests
+
+```
+npm test
+```
 
 ### License
 
