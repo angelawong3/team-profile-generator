@@ -2,15 +2,25 @@
 
 ## This is the repository for the team profile generator
 
+## Table of Contents
+
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshot and the Walkthrough Video](#screenshot-and-the-walkthrough-video)
+- [Teachologies Used](#technologies-used)
+- [License](#license)
+- [Contact Me](#contact-me)
+
 ## Description
 
-A professional readme generator which enable users to quickly create a professional README for a new project.
+A team profile generator which enable users to quickly create a webpage that displays a team's basic info.
 
 ### Installation
 
 ```
-git clone git@github.com:angelawong3/professional-readme-generator.git
-cd professional-readme-generator
+git clone git@github.com:angelawong3/team-profile-generator.git
+cd team-profile-generator
 npm install
 ```
 
@@ -18,6 +28,8 @@ npm install
 
 ```
 node index.js
+or
+npm run start
 ```
 
 ### Screenshot and the Walkthrough Video
@@ -26,9 +38,10 @@ node index.js
 <br />
 Download the walkthrough video [here]()
 
-### Technologies used
+### Technologies Used
 
-JavaScript
+1. JavaScript
+2. Node.js
 
 ### License
 
