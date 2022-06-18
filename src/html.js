@@ -1,7 +1,6 @@
 // Template of the HTML page
 const templateHTML = (data) => {
-  return `
-    <!DOCTYPE html>
+  return `<!DOCTYPE html>
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
@@ -29,14 +28,12 @@ const templateHTML = (data) => {
            </div>
            </main>
         </body>
-      </html>
-    `;
+      </html>`;
 };
 
 // Manager card
 const manager = (managerData) => {
-  return `
-  <div class="col mb-4">
+  return `<div class="col mb-4">
   <div class="card h-100">
     <div class="bg-info">
       <h5 class="pl-3 pt-3">${managerData.getName()}</h5>
@@ -53,15 +50,12 @@ const manager = (managerData) => {
       </ul>
     </div>
   </div>
-</div>
-
-  `;
+</div>`;
 };
 
 // Engineer card
 const engineer = (engineerData) => {
-  return `
-  <div class="col mb-4">
+  return `<div class="col mb-4">
   <div class="card h-100">
     <div class="bg-info">
       <h5 class="pl-3 pt-3">${engineerData.getName()}</h5>
@@ -84,13 +78,12 @@ const engineer = (engineerData) => {
       </ul>
     </div>
   </div>
-</div>  `;
+</div>`;
 };
 
 // Intern card
 const intern = (internData) => {
-  return `
-  <div class="col mb-4">
+  return `<div class="col mb-4">
   <div class="card h-100">
     <div class="bg-info">
       <h5 class="pl-3 pt-3">${internData.getName()}</h5>
@@ -107,8 +100,7 @@ const intern = (internData) => {
       </ul>
     </div>
   </div>
-</div>
-`;
+</div>`;
 };
 
 // Create cards for employees
