@@ -37,7 +37,7 @@ npm run start
 
 ![screenshot](/dist/assets/img/gen-ed-html.png)
 <br />
-Download the walkthrough video [here]()
+Download the walkthrough video [here](https://drive.google.com/file/d/17PP3XCSga4eNFW9RnyoTGv4IB85n4Bf5/view?usp=sharing)
 
 ### Technologies Used
 
