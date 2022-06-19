@@ -66,7 +66,7 @@ const engineer = (engineerData) => {
         <li class="list-group-item">ID:&nbsp;${engineerData.getId()}</li>
         <li class="list-group-item">
           Email:
-          <a href="${engineerData.getEmail()}">${engineerData.getEmail()}</a>
+          <a href="mailto:${engineerData.getEmail()}">${engineerData.getEmail()}</a>
         </li>
         <li class="list-group-item">
           GitHub:
