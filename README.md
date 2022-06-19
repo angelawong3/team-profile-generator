@@ -23,7 +23,6 @@ A team profile generator which enable users to quickly create a webpage that dis
 git clone git@github.com:angelawong3/team-profile-generator.git
 cd team-profile-generator
 npm install inquirer
-npm install jest
 ```
 
 ### Usage
@@ -36,7 +35,7 @@ npm run start
 
 ### Screenshot and the Walkthrough Video
 
-![screenshot]()
+![screenshot](/dist/assets/img/gen-ed-html.png)
 <br />
 Download the walkthrough video [here]()
 
@@ -48,6 +47,7 @@ Download the walkthrough video [here]()
 ### Tests
 
 ```
+npm install jest
 npm test
 ```
 
